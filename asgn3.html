@@ -3,25 +3,17 @@
 <head>      
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakshi Yogi — Web Development Portfolio</title>
-    <meta name="description" content="Sakshi Yogi — Student web developer. A simple portfolio to showcase projects, skills, and contact information.">
-    <meta name="theme-color" content="#6a5acd">
-   
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style2.css">
+    <title>Sakshi Yogi - Web Development Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- 
-    <a class="skip-link" href="#main">Skip to content</a>
-
     <!-- HEADER -->
     <header class="header">
         <h1 class="logo">Sakshi Yogi</h1>
-            <nav aria-label="Primary Navigation">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
-            <ul id="nav-list" class="nav-links">
+        <nav>
+            <ul class="nav-links">
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -32,22 +24,13 @@
 
 
     <!-- HERO SECTION -->
-    <main id="main">
     <section class="hero">
-        <div class="container hero-inner">
-            <div class="hero-text fade-in">
-                <h2>Hello, I'm <span class="highlight">Sakshi Yogi</span></h2>
-                <p class="sub">A Web Development student creating simple and beautiful websites.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn">See my projects</a>
-                    <a href="#contact" class="btn ghost">Contact me</a>
-                </div>
-            </div>
-            <figure class="hero-figure fade-in">
-                <img src="Sakshi pic.jpg" class="hero-img" alt="Portrait of Sakshi Yogi" loading="lazy" width="420" height="420">
-                <figcaption class="sr-only">Portrait of Sakshi Yogi</figcaption>
-            </figure>
+        <div class="hero-text fade-in">
+            <h2>Hello, I'm <span class="highlight">Sakshi Yogi</span></h2>
+            <p>A Web Development Student learning to build simple & beautiful websites.</p>
         </div>
+
+        <img src="Sakshi pic.jpg" class="hero-img" alt="Profile Photo">
     </section>
 
 
@@ -99,35 +82,19 @@
     <section id="contact" class="contact fade-in">
         <h2>Contact Me</h2>
 
-        <form class="contact-form" id="contact-form" aria-label="Contact form">
-            <label for="name">Your Name</label>
-            <input id="name" name="name" type="text" placeholder="Your Name" required>
-
-            <label for="email">Your Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="4" placeholder="Your Message"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
 
-    </main>
-
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <p>&copy; 2025 Sakshi Yogi | All rights reserved.</p>
-            <nav class="social" aria-label="Social links">
-                <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
-                <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
-            </nav>
-        </div>
+        <p>&copy; 2025 Sakshi Yogi | All rights reserved.</p>
     </footer>
-
-    <script src="script.js" defer></script>
 
 </body>
 </html>
