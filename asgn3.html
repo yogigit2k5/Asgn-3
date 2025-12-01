@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Yogi — Web Development Portfolio</title>
+    <meta name="description" content="Sakshi Yogi — Student web developer. A simple portfolio to showcase projects, skills, and contact information.">
+    <meta name="theme-color" content="#6a5acd">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style2.css">
+</head>
+
+<body>
+
+ 
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="logo">Sakshi Yogi</h1>
+            <nav aria-label="Primary Navigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <ul id="nav-list" class="nav-links">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main id="main">
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text fade-in">
+                <h2>Hello, I'm <span class="highlight">Sakshi Yogi</span></h2>
+                <p class="sub">A Web Development student creating simple and beautiful websites.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn">See my projects</a>
+                    <a href="#contact" class="btn ghost">Contact me</a>
+                </div>
+            </div>
+            <figure class="hero-figure fade-in">
+                <img src="Sakshi pic.jpg" class="hero-img" alt="Portrait of Sakshi Yogi" loading="lazy" width="420" height="420">
+                <figcaption class="sr-only">Portrait of Sakshi Yogi</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about-me" class="about fade-in">
+        <h2>About Me</h2>
+        <p>My name is Sakshi Yogi, and I am pursuing Computer Science. I enjoy learning
+           web development and experimenting with new designs.</p>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects fade-in">
+        <h2>Projects</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A simple responsive portfolio made using HTML & CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Calorie Tracker</h3>
+                <p>A Python-based daily calorie tracking tool.</p>
+            </div>
+
+            <div class="card">
+                <h3>Blog Platform</h3>
+                <p>A small blog-sharing website for posting and reading blogs.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills fade-in">
+        <h2>My Technical Skills</h2>
+
+        <div class="grid">
+            <div class="card"><strong>HTML</strong><br>Beginner</div>
+            <div class="card"><strong>CSS</strong><br>Beginner</div>
+            <div class="card"><strong>JavaScript</strong><br>Beginner</div>
+            <div class="card"><strong>Python</strong><br>Beginner</div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form" id="contact-form" aria-label="Contact form">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Sakshi Yogi | All rights reserved.</p>
+            <nav class="social" aria-label="Social links">
+                <a href="#" aria-label="GitHub" class="social-link">GitHub</a>
+                <a href="#" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
